@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+</head>
+
+<body>
+  <sp-heading>Focalizer</sp-heading>
+  <sp-body id="settings">
+    <sp-picker id="mode" placeholder="Make a selection...">
+      <sp-label slot="label">Mode:</sp-label>
+      <sp-menu slot="options">
+        <sp-menu-item checked>Normal</sp-menu-item>
+        <sp-menu-item>Blur</sp-menu-item>
+      </sp-menu>
+    </sp-picker>
+    <sp-slider id="opacity" variant="filled" fill-offset="left" value-label="%" min="0" max="100" value="75">
+      <sp-label slot="label">Opacity</sp-label>
+    </sp-slider>
+    <sp-textfield id="hexColor" placeholder="None">
+   <sp-label slot="label">Focus border color:</sp-label>
+</sp-textfield>
+    <sp-radio-group id="calcMode">
+      <sp-label slot="label">Size calculation:</sp-label>
+      <sp-radio value="filled" name="output" checked>Filled area</sp-radio>
+      <sp-radio value="negative" name="output">Negative area</sp-radio>
+    </sp-radio-group>
+  </sp-body>
+  <sp-body id="runtime">
+    <sp-progressbar id="progress" max=100 value=50>
+      <sp-label slot="label">Progress</sp-label>
+    </sp-progressbar>
+  </sp-body>
+  <footer id="footer">
+    <sp-button id="btnStart">Start</sp-button>
+    <sp-button id="btnLoad">Open Images</sp-button>
+    <sp-button id="btnOutput" variant="secondary">Output Folder</sp-button>
+      <sp-button id="btnNext">Save</sp-button>
+    <sp-button id="btnReset" variant="warning">Reset</sp-button>
+  </footer>
+</body>
+
+</html>

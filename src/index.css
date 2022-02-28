@@ -1,0 +1,43 @@
+body {
+  color: white;
+  padding: 0 16px;
+}
+li:before {
+  content: '• ';
+  width: 3em;
+}
+
+#settings, #runtime {
+  border: 1px solid #808080;
+  border-radius: 4px;
+  padding: 16px;
+}
+
+#runtime {
+  display: none;
+}
+
+#mode {
+  width: 100%;
+}
+
+#opacity {
+  margin-top: 12px;
+}
+
+#hexColor {
+  width: 100%;
+}
+
+#progress {
+  width: 100%;
+}
+
+#btnStart, #btnNext, #btnReset {
+  display: none;
+}
+
+#footer {
+  display: flex;
+  justify-content: space-between;
+}

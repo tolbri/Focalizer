@@ -1,0 +1,2 @@
+# Focalizer
+ Adobe Photoshop plugin
